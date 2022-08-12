@@ -1,0 +1,143 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    /* border: 1px solid #000; */
+    font-family: "Arial Black"
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background:lightgray;
+    color:white;
+}
+
+header {
+    padding: 20px 10px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #de3f53;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-family: "Arial Black";
+}
+
+#new-task-form{
+    display: flex;
+    border-radius: 15px;
+}
+
+
+input, button{
+    appearance: none;
+    border:none;
+    outline: none;
+    background: #1dd2af;
+}
+
+#new-task-input {
+    flex: 1;
+    background-color:#3c4979;
+    padding: 20px;
+    color:white;
+    font-size: 15px;
+}
+
+#new-task-submit {
+    color:white;
+    font-size: 20px;
+    font-weight: 100px;
+    cursor: pointer;
+    transition: 0.4s;
+    width: 10%;
+}
+
+#new-task-submit:hover{
+    opacity: 0.8;
+    color:yellow;
+}
+
+#new-task-submit:active {
+    opacity: 0.6;
+    color:yellow;
+}
+
+main{
+    flex:1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list{
+    padding: 1rem;
+    background-color: #de3f53;
+}
+
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: #de3f53;
+    font-family:"Arial Black";
+}
+
+#tasks .task .content {
+    flex:1;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color:#262e4c;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#tasks .task .content .text {
+    background-color:#262e4c;
+    color:white;
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+    font-family:"Arial Black" ;
+}
+
+
+.task .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+    background-color: #262e4c;
+}
+
+.task .actions button:hover{
+    opacity: 0.8;
+    color:yellow;
+}
+
+.task .actions button:active {
+    opacity: 0.6;
+    color:yellow;
+}
+
+.task .actions .edit {
+    color: white;
+}
+
+.task .actions .delete {
+    color: white;
+}
